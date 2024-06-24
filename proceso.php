@@ -19,11 +19,10 @@ function division($a, $b) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $val1 = $_POST['num1'];
-    $val2 = $_POST['num2'];
+    $val1 = $_POST['val1'];
+    $val2 = $_POST['val2'];
     $operacion = $_POST['operacion'];
 
-    // Validar que los números sean válidos}
     if (!is_numeric($val1) || !is_numeric($val2)) {
         echo "Error: Por favor ingrese números válidos.";
         exit();
